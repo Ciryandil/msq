@@ -53,7 +53,7 @@ class MSQueue<T> {
             first = head.get(firstStamp);
             next = first.next.get(nextStamp);
             last = tail.get(lastStamp);
-            if(firstStamp[0] == head.getStamp()) {
+            if(first == head.getReference()) {
                 if(first == last) {
                     if(next == null) {
                         throw new Exception("Queue is empty");
