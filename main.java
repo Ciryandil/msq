@@ -4,6 +4,7 @@ class Main {
         queue.enqueue("hello");
         try {
             System.out.println(queue.dequeue());
+            System.out.println(queue.dequeue());
         } catch(Exception e) {
             System.out.println("Error: " + e);
         }
